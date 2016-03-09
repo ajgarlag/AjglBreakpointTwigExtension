@@ -51,6 +51,23 @@ Once registered, you can call the new `breakpoint` function:
 ```
 
 
+Symfony Bundle
+--------------
+
+If you want to use this extension in your Symfony application, you can enable the
+Symfony Bundle included in this package:
+
+```php
+// app/AppKernel.php
+if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
+    $bundles[] = new Ajgl\Twig\Extension\SymfonyBundle\AjglBreakpointTwigExtensionBundle();
+}
+```
+
+This bundle will register the twig extension automatically. So, once enabled, you
+can insert the `breakpoint` twig function in your templates.
+
+
 License
 -------
 
