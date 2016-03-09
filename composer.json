@@ -1,0 +1,33 @@
+{
+    "name": "ajgl/breakpoint-twig-extension",
+    "description": "Twig extension to set breakpoints",
+    "keywords": ["twig", "xdebug", "breakpoint"],
+    "homepage": "https://github.com/ajgl/AjglTwigBreakpointExtension",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Antonio J. García Lagar",
+        "email": "aj@garcialagar.es",
+        "homepage": "http://aj.garcialagar.es",
+        "role": "developer"
+      }
+    ],
+    "autoload": {
+        "psr-4": { "Ajgl\\Twig\\Extension\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Ajgl\\Twig\\Extension\\Tests\\": "tests/" }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "twig/twig": "^1.14"
+    },
+    "suggest": {
+        "ext-xdebug": "The Xdebug extension is required for the breakpoint to work"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
