@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+### Added
+- Add Symfony Bundle
+
 ## 0.1.0 - 2016-03-09
 
 ### Added

@@ -22,8 +22,14 @@
         "php": ">=5.4.0",
         "twig/twig": "^1.14"
     },
+    "require-dev": {
+        "symfony/framework-bundle": "^2.3",
+        "symfony/twig-bundle": "^2.3"
+    },
     "suggest": {
-        "ext-xdebug": "The Xdebug extension is required for the breakpoint to work"
+        "ext-xdebug": "The Xdebug extension is required for the breakpoint to work",
+        "symfony/framework-bundle": "The framework bundle to integrate the extension into Symfony",
+        "symfony/twig-bundle": "The twig bundle to integrate the extension into Symfony"
     },
     "extra": {
         "branch-alias": {
