@@ -33,7 +33,7 @@ Usage
 The first step is to register the extension into the twig environment
 ```php
 /* @var $twig Twig_Environment */
-$twig->addExtension(new Ajgl\Twig\Extension\Breakpoint());
+$twig->addExtension(new Ajgl\Twig\Extension\BreakpointExtension());
 ```
 
 Once registered, you can call the new `breakpoint` function:
