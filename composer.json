@@ -2,7 +2,7 @@
     "name": "ajgl/breakpoint-twig-extension",
     "description": "Twig extension to set breakpoints",
     "keywords": ["twig", "xdebug", "breakpoint"],
-    "homepage": "https://github.com/ajgl/AjglTwigBreakpointExtension",
+    "homepage": "https://github.com/ajgarlag/AjglBreakpointTwigExtension",
     "license": "MIT",
     "authors": [
       {
