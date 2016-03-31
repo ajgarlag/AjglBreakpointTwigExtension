@@ -52,6 +52,22 @@ Once registered, you can call the new `breakpoint` function:
 
 Once stopped, your debugger will allow you to inspect the `$environment` and `$context` variables.
 
+### Function arguments
+
+Any argument passed to the twig function will be added to the `$arguments` array, so you can inspect it easily.
+
+```twig
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    {{ breakpoint(app.user, app.session) }}
+  </body>
+</html>
+```
 
 Symfony Bundle
 --------------

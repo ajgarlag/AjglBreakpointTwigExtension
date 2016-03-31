@@ -40,6 +40,7 @@ class BreakpointExtension extends Twig_Extension
     public function setBreakpoint(Twig_Environment $environment, $context)
     {
         if (function_exists('xdebug_break')) {
+            $arguments = array_slice(func_get_args(), 2);
             xdebug_break();
         }
     }
