@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+## [0.3.0] - 2016-03-31
+
 ### Added
 - Add `$environment` and `$context` variables
 - Allow to inspect function arguments
@@ -19,5 +21,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `breakpoint` function
 
 
-[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.2.0...master
+[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.3.0...master
+[0.3.0]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.1.0...0.2.0
