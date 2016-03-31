@@ -11,10 +11,13 @@
 
 namespace Ajgl\Twig\Extension;
 
+use Twig_Environment;
+use Twig_Extension;
+
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
  */
-class BreakpointExtension extends \Twig_Extension
+class BreakpointExtension extends Twig_Extension
 {
     public function getName()
     {
@@ -31,10 +34,10 @@ class BreakpointExtension extends \Twig_Extension
     /**
      * If XDebug is detected, makes the debugger break.
      *
-     * @param mixed $environment the environment instance
-     * @param mixed $context     variables from the Twig template
+     * @param Twig_Environment $environment the environment instance
+     * @param mixed            $context     variables from the Twig template
      */
-    public function setBreakpoint($environment, $context)
+    public function setBreakpoint(Twig_Environment $environment, $context)
     {
         if (function_exists('xdebug_break')) {
             xdebug_break();

@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+### Added
+- Add `$environment` and `$context` variables
+
 ## [0.2.0] - 2016-03-10
 
 ### Added

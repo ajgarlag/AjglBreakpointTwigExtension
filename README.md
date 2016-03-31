@@ -50,6 +50,8 @@ Once registered, you can call the new `breakpoint` function:
 </html>
 ```
 
+Once stopped, your debugger will allow you to inspect the `$environment` and `$context` variables.
+
 
 Symfony Bundle
 --------------
