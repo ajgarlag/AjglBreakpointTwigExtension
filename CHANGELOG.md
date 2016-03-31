@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Add `$environment` and `$context` variables
+- Allow to inspect function arguments
 
 ## [0.2.0] - 2016-03-10
 
