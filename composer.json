@@ -24,7 +24,8 @@
     },
     "require-dev": {
         "symfony/framework-bundle": "^2.7|^3.2",
-        "symfony/twig-bundle": "^2.7|^3.2"
+        "symfony/twig-bundle": "^2.7|^3.2",
+        "phpunit/phpunit": "^5"
     },
     "suggest": {
         "ext-xdebug": "The Xdebug extension is required for the breakpoint to work",
