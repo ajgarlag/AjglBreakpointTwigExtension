@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+### Fixed
+- Update requirements to allow twig 2.x
+
 ## [0.3.0] - 2016-03-31
 
 ### Added
