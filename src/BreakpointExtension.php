@@ -32,7 +32,7 @@ class BreakpointExtension extends Twig_Extension
     }
 
     /**
-     * If XDebug is detected, makes the debugger break.
+     * If Xdebug is detected, makes the debugger break.
      *
      * @param Twig_Environment $environment the environment instance
      * @param mixed            $context     variables from the Twig template
