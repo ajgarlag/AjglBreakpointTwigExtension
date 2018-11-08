@@ -73,7 +73,12 @@ Symfony Bundle
 --------------
 
 If you want to use this extension in your Symfony application, you can enable the
-Symfony Bundle included in this package:
+Symfony Bundle included in this package.
+
+The bundle will register the twig extension automatically. So, once enabled, you
+can insert the `breakpoint` twig function in your templates.
+
+### Symfony 2/3
 
 ```php
 // app/AppKernel.php
@@ -82,9 +87,16 @@ if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
 }
 ```
 
-This bundle will register the twig extension automatically. So, once enabled, you
-can insert the `breakpoint` twig function in your templates.
+### Symfony 4
 
+```php
+// config/bundles.php
+//...
+return [
+    //...
+    Ajgl\Twig\Extension\SymfonyBundle\AjglBreakpointTwigExtensionBundle::class => ['dev' => true]
+];
+```
 
 License
 -------
