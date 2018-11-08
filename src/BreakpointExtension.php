@@ -13,6 +13,7 @@ namespace Ajgl\Twig\Extension;
 
 use Twig_Environment;
 use Twig_Extension;
+use Twig_SimpleFunction;
 
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
@@ -27,7 +28,7 @@ class BreakpointExtension extends Twig_Extension
     public function getFunctions()
     {
         return array(
-            new \Twig_SimpleFunction('breakpoint', array($this, 'setBreakpoint'), array('needs_environment' => true, 'needs_context' => true)),
+            new Twig_SimpleFunction('breakpoint', array($this, 'setBreakpoint'), array('needs_environment' => true, 'needs_context' => true)),
         );
     }
 

@@ -12,11 +12,12 @@
 namespace Ajgl\Twig\Extension\Tests;
 
 use Ajgl\Twig\Extension\BreakpointExtension;
+use PHPUnit_Framework_TestCase;
 
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
  */
-class BreakpointExtensionTest extends \PHPUnit_Framework_TestCase
+class BreakpointExtensionTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @var BreakpointExtension
