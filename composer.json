@@ -32,6 +32,12 @@
         "symfony/framework-bundle": "The framework bundle to integrate the extension into Symfony",
         "symfony/twig-bundle": "The twig bundle to integrate the extension into Symfony"
     },
+    "scripts": {
+        "phpunit": "vendor/bin/phpunit --colors=always",
+        "test": [
+            "@phpunit"
+        ]
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "0.3.x-dev"
