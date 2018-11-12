@@ -23,8 +23,8 @@
         "twig/twig": "^1.14|^2.0"
     },
     "require-dev": {
-        "symfony/framework-bundle": "^2.7|^3.2",
-        "symfony/twig-bundle": "^2.7|^3.2",
+        "symfony/framework-bundle": "^2.7|^3.2|^4.1",
+        "symfony/twig-bundle": "^2.7|^3.2|^4.1",
         "phpunit/phpunit": "^5"
     },
     "suggest": {
