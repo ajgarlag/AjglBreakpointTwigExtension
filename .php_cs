@@ -9,22 +9,27 @@ For the full copyright and license information, please view the LICENSE
 file that was distributed with this source code.
 EOF;
 
-Symfony\CS\Fixer\Contrib\HeaderCommentFixer::setHeader($header);
-
-return Symfony\CS\Config\Config::create()
-    ->setUsingCache(true)
-    // use default SYMFONY_LEVEL and extra fixers:
-    ->fixers(array(
-        '-psr0',
-        'header_comment',
-        'newline_after_open_tag',
-        'ordered_use',
-        'phpdoc_order',
-        'strict',
-        'strict_param',
-    ))
-    ->finder(
-        Symfony\CS\Finder\DefaultFinder::create()
+return \PhpCsFixer\Config::create()
+    ->setRiskyAllowed(true)
+    ->setRules(
+        [
+            '@Symfony' => true,
+            '@Symfony:risky' => true,
+            'array_syntax' => array('syntax' => 'short'),
+            'fully_qualified_strict_types' => true,
+            'header_comment' => array('header' => $header),
+            'native_function_invocation' => false,
+            'ordered_imports' => [
+                'imports_order' => ['class', 'const', 'function'],
+            ],
+            'phpdoc_order' => true,
+            'psr4' => true,
+            'strict_comparison' => true,
+            'strict_param' => true,
+        ]
+    )
+    ->setFinder(
+        \PhpCsFixer\Finder::create()
             ->in(__DIR__.'/src')
             ->in(__DIR__.'/tests')
     )
