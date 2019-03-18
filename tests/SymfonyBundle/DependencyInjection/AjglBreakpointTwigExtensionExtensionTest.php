@@ -38,7 +38,7 @@ class AjglBreakpointTwigExtensionExtensionTest extends TestCase
 
     public function testTwigExtensionsDefinition()
     {
-        $this->extension->load(array(), $this->container);
+        $this->extension->load([], $this->container);
         $this->assertTrue($this->container->hasDefinition('ajgl_twig_extension.breakpoint'));
         $definition = $this->container->getDefinition('ajgl_twig_extension.breakpoint');
         $this->assertSame(

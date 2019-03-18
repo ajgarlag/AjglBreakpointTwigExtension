@@ -27,9 +27,9 @@ class BreakpointExtension extends AbstractExtension
 
     public function getFunctions()
     {
-        return array(
-            new TwigFunction('breakpoint', array($this, 'setBreakpoint'), array('needs_environment' => true, 'needs_context' => true)),
-        );
+        return [
+            new TwigFunction('breakpoint', [$this, 'setBreakpoint'], ['needs_environment' => true, 'needs_context' => true]),
+        ];
     }
 
     /**
