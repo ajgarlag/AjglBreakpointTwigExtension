@@ -11,14 +11,14 @@
 
 namespace Ajgl\Twig\Extension;
 
-use Twig_Environment;
-use Twig_Extension;
-use Twig_SimpleFunction;
+use Twig\Environment;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
  */
-class BreakpointExtension extends Twig_Extension
+class BreakpointExtension extends AbstractExtension
 {
     public function getName()
     {
@@ -28,17 +28,17 @@ class BreakpointExtension extends Twig_Extension
     public function getFunctions()
     {
         return array(
-            new Twig_SimpleFunction('breakpoint', array($this, 'setBreakpoint'), array('needs_environment' => true, 'needs_context' => true)),
+            new TwigFunction('breakpoint', array($this, 'setBreakpoint'), array('needs_environment' => true, 'needs_context' => true)),
         );
     }
 
     /**
      * If Xdebug is detected, makes the debugger break.
      *
-     * @param Twig_Environment $environment the environment instance
-     * @param mixed            $context     variables from the Twig template
+     * @param Environment $environment the environment instance
+     * @param mixed       $context     variables from the Twig template
      */
-    public function setBreakpoint(Twig_Environment $environment, $context)
+    public function setBreakpoint(Environment $environment, $context)
     {
         if (function_exists('xdebug_break')) {
             $arguments = array_slice(func_get_args(), 2);
