@@ -13,7 +13,6 @@ The AjglBreakpointTwigExtension component allows you set breakpoints in twig tem
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ajgarlag/AjglBreakpointTwigExtension/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ajgarlag/AjglBreakpointTwigExtension/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/ajgarlag/AjglBreakpointTwigExtension/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ajgarlag/AjglBreakpointTwigExtension/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/e0f1276d-6ded-4a20-9b3f-1a7c77a92015/mini.png)](https://insight.sensiolabs.com/projects/e0f1276d-6ded-4a20-9b3f-1a7c77a92015)
-[![StyleCI](https://styleci.io/repos/53512207/shield)](https://styleci.io/repos/53512207)
 
 This component requires the [Xdebug] PHP extension to be installed.
 
