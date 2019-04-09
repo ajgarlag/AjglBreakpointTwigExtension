@@ -41,7 +41,8 @@ class BreakpointExtension extends AbstractExtension
     public function setBreakpoint(Environment $environment, $context)
     {
         if (function_exists('xdebug_break')) {
-            $arguments = array_slice(func_get_args(), 2);
+            $arguments = func_get_args();
+            $arguments = array_slice($arguments, 2);
             xdebug_break();
         }
     }
