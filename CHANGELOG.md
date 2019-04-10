@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased][unreleased]
 
 ### Fixed
+- Population of `$arguments` variable
 - Usage of deprecated classes
 
 ## [0.3.2] - 2018-12-10
