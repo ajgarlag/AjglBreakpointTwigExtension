@@ -6,7 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Add support for Symfony 5
-
+- Add support for Twig 3.x
 
 ## [0.3.4] - 2019-04-10
 

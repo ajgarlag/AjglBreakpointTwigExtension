@@ -14,6 +14,7 @@ namespace Ajgl\Twig\Extension\Tests;
 use Ajgl\Twig\Extension\BreakpointExtension;
 use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\PhpUnit\SetUpTearDownTrait;
+use Twig\TwigFunction;
 
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
@@ -42,7 +43,7 @@ class BreakpointExtensionTest extends TestCase
         $functions = $this->extension->getFunctions();
         $this->assertCount(1, $functions);
         $function = reset($functions);
-        $this->assertInstanceOf('Twig_SimpleFunction', $function);
+        $this->assertInstanceOf(TwigFunction::class, $function);
         $callable = $function->getCallable();
         $this->assertTrue(is_array($callable));
         $this->assertCount(2, $callable);
