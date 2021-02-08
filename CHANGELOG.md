@@ -4,9 +4,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+
+## [0.3.5] - 2021-02-08
+
 ### Added
 - Add support for Symfony 5
 - Add support for Twig 3.x
+
 
 ## [0.3.4] - 2019-04-10
 
@@ -54,7 +58,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `breakpoint` function
 
 
-[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.3.4...master
+[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.3.5...master
+[0.3.4]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.3.4...0.3.5
 [0.3.4]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.3.3...0.3.4
 [0.3.3]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.3.2...0.3.3
 [0.3.2]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.3.1...0.3.2
