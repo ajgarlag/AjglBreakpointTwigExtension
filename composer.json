@@ -23,9 +23,10 @@
         "twig/twig": "^1.14|^2.0"
     },
     "require-dev": {
-        "symfony/framework-bundle": "^2.7|^3.2|^4.1",
-        "symfony/twig-bundle": "^2.7|^3.2|^4.1",
-        "symfony/phpunit-bridge": "^3.4|^4.1"
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "symfony/framework-bundle": "^2.7|^3.4|^4.4|^5.2",
+        "symfony/phpunit-bridge": "^4.4|^5.2",
+        "symfony/twig-bundle": "^2.7|^3.4|^4.4|^5.2"
     },
     "suggest": {
         "ext-xdebug": "The Xdebug extension is required for the breakpoint to work",
@@ -33,10 +34,18 @@
         "symfony/twig-bundle": "The twig bundle to integrate the extension into Symfony"
     },
     "scripts": {
-        "phpunit": "vendor/bin/simple-phpunit --colors=always",
+        "fix-cs": [
+            "vendor/bin/php-cs-fixer fix --ansi"
+        ],
+        "lint": [
+            "vendor/bin/php-cs-fixer fix --dry-run --ansi"
+        ],
         "test": [
-            "@phpunit"
+            "vendor/bin/simple-phpunit --colors=always"
         ]
+    },
+    "config": {
+        "sort-packages": true
     },
     "extra": {
         "branch-alias": {

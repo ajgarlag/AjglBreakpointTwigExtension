@@ -13,6 +13,7 @@ namespace Ajgl\Twig\Extension\Tests\SymfonyBundle\DependencyInjection;
 
 use Ajgl\Twig\Extension\SymfonyBundle\DependencyInjection\AjglBreakpointTwigExtensionExtension;
 use PHPUnit\Framework\TestCase;
+use Symfony\Bridge\PhpUnit\SetUpTearDownTrait;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
@@ -20,6 +21,8 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
  */
 class AjglBreakpointTwigExtensionExtensionTest extends TestCase
 {
+    use SetUpTearDownTrait;
+
     /**
      * @var ContainerBuilder
      */
@@ -30,7 +33,7 @@ class AjglBreakpointTwigExtensionExtensionTest extends TestCase
      */
     protected $extension;
 
-    protected function setUp()
+    protected function doSetUp()
     {
         $this->container = new ContainerBuilder();
         $this->extension = new AjglBreakpointTwigExtensionExtension();

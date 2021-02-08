@@ -86,7 +86,7 @@ if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
 }
 ```
 
-### Symfony 4
+### Symfony 4/5
 
 ```php
 // config/bundles.php

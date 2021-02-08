@@ -13,18 +13,21 @@ namespace Ajgl\Twig\Extension\Tests;
 
 use Ajgl\Twig\Extension\BreakpointExtension;
 use PHPUnit\Framework\TestCase;
+use Symfony\Bridge\PhpUnit\SetUpTearDownTrait;
 
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
  */
 class BreakpointExtensionTest extends TestCase
 {
+    use SetUpTearDownTrait;
+
     /**
      * @var BreakpointExtension
      */
     protected $extension;
 
-    protected function setUp()
+    protected function doSetUp()
     {
         $this->extension = new BreakpointExtension();
     }
