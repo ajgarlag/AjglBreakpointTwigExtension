@@ -3,7 +3,7 @@ AjglBreakpointTwigExtension
 
 The AjglBreakpointTwigExtension component allows you set breakpoints in twig templates.
 
-[![Build Status](https://travis-ci.org/ajgarlag/AjglBreakpointTwigExtension.png?branch=master)](https://travis-ci.org/ajgarlag/AjglBreakpointTwigExtension)
+[![Build Status](https://github.com/ajgarlag/AjglBreakpointTwigExtension/workflows/tests/badge.svg?branch=master)](https://github.com/ajgarlag/AjglBreakpointTwigExtension/actions)
 [![Latest Stable Version](https://poser.pugx.org/ajgl/breakpoint-twig-extension/v/stable.png)](https://packagist.org/packages/ajgl/breakpoint-twig-extension)
 [![Latest Unstable Version](https://poser.pugx.org/ajgl/breakpoint-twig-extension/v/unstable.png)](https://packagist.org/packages/ajgl/breakpoint-twig-extension)
 [![Total Downloads](https://poser.pugx.org/ajgl/breakpoint-twig-extension/downloads.png)](https://packagist.org/packages/ajgl/breakpoint-twig-extension)
