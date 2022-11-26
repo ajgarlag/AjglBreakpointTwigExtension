@@ -19,8 +19,8 @@ Installation
 ------------
 
 To install the latest stable version of this component, open a console and execute the following command:
-```
-$ composer require ajgl/breakpoint-twig-extension
+```bash 
+composer require ajgl/breakpoint-twig-extension --dev
 ```
 
 
