@@ -19,7 +19,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
  */
-class AjglBreakpointTwigExtensionExtension extends Extension
+final class AjglBreakpointTwigExtensionExtension extends Extension
 {
     public function load(array $config, ContainerBuilder $container)
     {

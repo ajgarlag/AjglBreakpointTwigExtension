@@ -16,6 +16,6 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
  */
-class AjglBreakpointTwigExtensionBundle extends Bundle
+final class AjglBreakpointTwigExtensionBundle extends Bundle
 {
 }

@@ -18,7 +18,7 @@ use Twig\TwigFunction;
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
  */
-class BreakpointExtension extends AbstractExtension
+final class BreakpointExtension extends AbstractExtension
 {
     public function getName()
     {

@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+### Changed
+- Mark all classes as `final`
+
 ### Removed
 - Drop support for PHP<7.4
 - Drop support for Symfony<4.4
