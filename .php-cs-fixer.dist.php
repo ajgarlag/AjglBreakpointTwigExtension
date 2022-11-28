@@ -1,5 +1,7 @@
 <?php
 
+use PhpCsFixer\Config;
+
 $header = <<<EOF
 AJGL Breakpoint Twig Extension Component
 
@@ -9,7 +11,7 @@ For the full copyright and license information, please view the LICENSE
 file that was distributed with this source code.
 EOF;
 
-return \PhpCsFixer\Config::create()
+return (new Config())
     ->setRiskyAllowed(true)
     ->setRules(
         [
@@ -23,7 +25,7 @@ return \PhpCsFixer\Config::create()
                 'imports_order' => ['class', 'const', 'function'],
             ],
             'phpdoc_order' => true,
-            'psr4' => true,
+            'psr_autoloading' => true,
             'strict_comparison' => true,
             'strict_param' => true,
         ]
