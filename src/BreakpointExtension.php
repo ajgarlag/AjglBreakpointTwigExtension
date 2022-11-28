@@ -35,12 +35,14 @@ final class BreakpointExtension extends AbstractExtension
         ];
     }
 
-    public function setBreakpoint(Environment $environment, $context): void
+    public function setBreakpoint(Environment $environment, $context): string
     {
         if (function_exists('xdebug_break')) {
             $arguments = func_get_args();
             $arguments = array_slice($arguments, 2);
             xdebug_break();
         }
+
+        return '';
     }
 }
