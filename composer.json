@@ -5,12 +5,12 @@
     "homepage": "https://github.com/ajgarlag/AjglBreakpointTwigExtension",
     "license": "MIT",
     "authors": [
-      {
-        "name": "Antonio J. García Lagar",
-        "email": "aj@garcialagar.es",
-        "homepage": "http://aj.garcialagar.es",
-        "role": "developer"
-      }
+        {
+            "name": "Antonio J. García Lagar",
+            "email": "aj@garcialagar.es",
+            "homepage": "http://aj.garcialagar.es",
+            "role": "developer"
+        }
     ],
     "autoload": {
         "psr-4": { "Ajgl\\Twig\\Extension\\": "src/" }
@@ -24,9 +24,9 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.18",
-        "symfony/framework-bundle": "^2.7|^3.4|^4.4|^5.2",
-        "symfony/phpunit-bridge": "^4.4|^5.2",
-        "symfony/twig-bundle": "^2.7|^3.4|^4.4|^5.2"
+        "symfony/framework-bundle": "^4.4|^5.4|^6.0",
+        "symfony/phpunit-bridge": "^6.1",
+        "symfony/twig-bundle": "^4.4|^5.4|^6.0"
     },
     "suggest": {
         "ext-xdebug": "The Xdebug extension is required for the breakpoint to work",

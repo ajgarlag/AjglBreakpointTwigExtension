@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 - Drop support for PHP<7.4
+- Drop support for Symfony<4.4
 
 ## [0.3.5] - 2021-02-08
 
