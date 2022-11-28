@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Mark all classes as `final`
+- Add return type hints
 
 ### Removed
 - Drop support for PHP<7.4
