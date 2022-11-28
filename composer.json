@@ -23,6 +23,7 @@
         "twig/twig": "^2.15.3|^3.0"
     },
     "require-dev": {
+        "composer/xdebug-handler": "^2.0|^3.0",
         "friendsofphp/php-cs-fixer": "^3.13",
         "phpunit/phpunit": "^9.5.6",
         "symfony/framework-bundle": "^4.4|^5.4|^6.0",
@@ -31,8 +32,15 @@
     },
     "suggest": {
         "ext-xdebug": "The Xdebug extension is required for the breakpoint to work",
+        "composer/xdebug-handler": "To improve de Xdebug detection",
         "symfony/framework-bundle": "The framework bundle to integrate the extension into Symfony",
         "symfony/twig-bundle": "The twig bundle to integrate the extension into Symfony"
+
+    },
+    "conflict": {
+        "composer/xdebug-handler": "<2.0",
+        "symfony/framework-bundle": "<4.4",
+        "symfony/twig-bundle": "<4.4"
     },
     "scripts": {
         "fix-cs": [

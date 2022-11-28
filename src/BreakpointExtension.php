@@ -11,6 +11,7 @@
 
 namespace Ajgl\Twig\Extension;
 
+use Composer\XdebugHandler\XdebugHandler;
 use Twig\Environment;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
@@ -37,12 +38,17 @@ final class BreakpointExtension extends AbstractExtension
 
     public function setBreakpoint(Environment $environment, $context): string
     {
-        if (function_exists('xdebug_break')) {
+        if ($this->isXdebugActive()) {
             $arguments = func_get_args();
             $arguments = array_slice($arguments, 2);
             xdebug_break();
         }
 
         return '';
+    }
+
+    private function isXdebugActive(): bool
+    {
+        return class_exists(XdebugHandler::class) ? XdebugHandler::isXdebugActive() : function_exists('xdebug_break');
     }
 }

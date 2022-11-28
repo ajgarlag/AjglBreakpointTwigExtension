@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Mark all classes as `final`
 - Add return type hints
 - Print an empty string with twig `breakpoint` function
+- Delegate Xdebug detection to `composer/xdebug-handler` when available
 
 ### Removed
 - Drop support for PHP<7.4
