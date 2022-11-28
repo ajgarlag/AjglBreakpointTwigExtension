@@ -24,6 +24,7 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.13",
+        "phpunit/phpunit": "^9.5",
         "symfony/framework-bundle": "^4.4|^5.4|^6.0",
         "symfony/phpunit-bridge": "^6.1",
         "symfony/twig-bundle": "^4.4|^5.4|^6.0"
@@ -41,7 +42,7 @@
             "vendor/bin/php-cs-fixer fix --dry-run --ansi"
         ],
         "test": [
-            "vendor/bin/simple-phpunit --colors=always"
+            "vendor/bin/phpunit --colors=always"
         ]
     },
     "config": {
