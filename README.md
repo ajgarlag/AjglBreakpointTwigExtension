@@ -75,16 +75,7 @@ Symfony Bundle included in this package.
 The bundle will register the twig extension automatically. So, once enabled, you
 can insert the `breakpoint` twig function in your templates.
 
-### Symfony 2/3
-
-```php
-// app/AppKernel.php
-if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
-    $bundles[] = new Ajgl\Twig\Extension\SymfonyBundle\AjglBreakpointTwigExtensionBundle();
-}
-```
-
-### Symfony 4/5
+### Symfony 4/5/6
 
 ```php
 // config/bundles.php
