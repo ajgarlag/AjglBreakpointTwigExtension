@@ -1,6 +1,7 @@
 {
     "name": "ajgl/breakpoint-twig-extension",
-    "description": "Twig extension to set breakpoints",
+    "type": "symfony-bundle",
+    "description": "Symfony bundle to set twig breakpoints",
     "keywords": ["twig", "xdebug", "breakpoint"],
     "homepage": "https://github.com/ajgarlag/AjglBreakpointTwigExtension",
     "license": "MIT",
