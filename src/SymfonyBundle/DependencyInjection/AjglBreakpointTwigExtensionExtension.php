@@ -19,9 +19,9 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
  */
-class AjglBreakpointTwigExtensionExtension extends Extension
+final class AjglBreakpointTwigExtensionExtension extends Extension
 {
-    public function load(array $config, ContainerBuilder $container)
+    public function load(array $config, ContainerBuilder $container): void
     {
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('twig.xml');

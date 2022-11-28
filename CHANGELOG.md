@@ -4,6 +4,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+### Changed
+- Mark all classes as `final`
+- Add return type hints
+- Print an empty string with twig `breakpoint` function
+
+### Removed
+- Drop support for PHP<7.4
+- Drop support for Symfony<4.4
+- Drop support for Twig<2.15.3
 
 ## [0.3.5] - 2021-02-08
 

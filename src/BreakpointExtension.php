@@ -18,32 +18,31 @@ use Twig\TwigFunction;
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
  */
-class BreakpointExtension extends AbstractExtension
+final class BreakpointExtension extends AbstractExtension
 {
-    public function getName()
+    public function getName(): string
     {
         return 'breakpoint';
     }
 
-    public function getFunctions()
+    /**
+     * @return TwigFunction[]
+     */
+    public function getFunctions(): array
     {
         return [
             new TwigFunction('breakpoint', [$this, 'setBreakpoint'], ['needs_environment' => true, 'needs_context' => true]),
         ];
     }
 
-    /**
-     * If Xdebug is detected, makes the debugger break.
-     *
-     * @param Environment $environment the environment instance
-     * @param mixed       $context     variables from the Twig template
-     */
-    public function setBreakpoint(Environment $environment, $context)
+    public function setBreakpoint(Environment $environment, $context): string
     {
         if (function_exists('xdebug_break')) {
             $arguments = func_get_args();
             $arguments = array_slice($arguments, 2);
             xdebug_break();
         }
+
+        return '';
     }
 }

@@ -13,32 +13,26 @@ namespace Ajgl\Twig\Extension\Tests;
 
 use Ajgl\Twig\Extension\BreakpointExtension;
 use PHPUnit\Framework\TestCase;
-use Symfony\Bridge\PhpUnit\SetUpTearDownTrait;
 use Twig\TwigFunction;
 
 /**
  * @author Antonio J. García Lagar <aj@garcialagar.es>
  */
-class BreakpointExtensionTest extends TestCase
+final class BreakpointExtensionTest extends TestCase
 {
-    use SetUpTearDownTrait;
+    protected BreakpointExtension $extension;
 
-    /**
-     * @var BreakpointExtension
-     */
-    protected $extension;
-
-    protected function doSetUp()
+    protected function setUp(): void
     {
         $this->extension = new BreakpointExtension();
     }
 
-    public function testGetName()
+    public function testGetName(): void
     {
         $this->assertSame('breakpoint', $this->extension->getName());
     }
 
-    public function testGetFunctions()
+    public function testGetFunctions(): void
     {
         $functions = $this->extension->getFunctions();
         $this->assertCount(1, $functions);
