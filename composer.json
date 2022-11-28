@@ -36,13 +36,13 @@
     },
     "scripts": {
         "fix-cs": [
-            "vendor/bin/php-cs-fixer fix --ansi"
+            "@php vendor/bin/php-cs-fixer fix --ansi"
         ],
         "lint": [
-            "vendor/bin/php-cs-fixer fix --dry-run --ansi"
+            "@php vendor/bin/php-cs-fixer fix --dry-run --ansi"
         ],
         "test": [
-            "vendor/bin/phpunit --colors=always"
+            "@php vendor/bin/phpunit --colors=always"
         ]
     },
     "config": {
