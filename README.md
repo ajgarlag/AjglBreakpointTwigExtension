@@ -102,7 +102,7 @@ Author Information
 
 Developed with ♥ by [Antonio J. García Lagar].
 
-If you find this component useful, please add a ★ in the [GitHub repository page] and/or the [Packagist package page].
+If you find this component useful, please add a ★ in the [GitHub repository page].
 
 [Xdebug]: https://xdebug.org/
 [LICENSE]: LICENSE
