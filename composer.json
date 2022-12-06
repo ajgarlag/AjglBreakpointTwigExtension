@@ -1,9 +1,13 @@
 {
     "name": "ajgl/breakpoint-twig-extension",
     "description": "Twig extension to set breakpoints",
-    "keywords": ["twig", "xdebug", "breakpoint"],
-    "homepage": "https://github.com/ajgarlag/AjglBreakpointTwigExtension",
     "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "twig",
+        "xdebug",
+        "breakpoint"
+    ],
     "authors": [
         {
             "name": "Antonio J. García Lagar",
@@ -12,35 +16,47 @@
             "role": "developer"
         }
     ],
-    "autoload": {
-        "psr-4": { "Ajgl\\Twig\\Extension\\": "src/" }
-    },
-    "autoload-dev": {
-        "psr-4": { "Ajgl\\Twig\\Extension\\Tests\\": "tests/" }
-    },
+    "homepage": "https://github.com/ajgarlag/AjglBreakpointTwigExtension",
     "require": {
         "php": ">=7.4",
-        "twig/twig": "^2.15.3|^3.0"
+        "twig/twig": "^2.15.3 || ^3.0"
     },
     "require-dev": {
-        "composer/xdebug-handler": "^2.0|^3.0",
+        "composer/xdebug-handler": "^2.0 || ^3.0",
         "friendsofphp/php-cs-fixer": "^3.13",
         "phpunit/phpunit": "^9.5.6",
-        "symfony/framework-bundle": "^4.4|^5.4|^6.0",
+        "symfony/framework-bundle": "^4.4 || ^5.4 || ^6.0",
         "symfony/phpunit-bridge": "^6.2",
-        "symfony/twig-bundle": "^4.4|^5.4|^6.0"
+        "symfony/twig-bundle": "^4.4 || ^5.4 || ^6.0"
+    },
+    "conflict": {
+        "composer/xdebug-handler": "<2.0",
+        "symfony/framework-bundle": "<4.4",
+        "symfony/twig-bundle": "<4.4"
     },
     "suggest": {
         "ext-xdebug": "The Xdebug extension is required for the breakpoint to work",
         "composer/xdebug-handler": "To improve de Xdebug detection",
         "symfony/framework-bundle": "The framework bundle to integrate the extension into Symfony",
         "symfony/twig-bundle": "The twig bundle to integrate the extension into Symfony"
-
     },
-    "conflict": {
-        "composer/xdebug-handler": "<2.0",
-        "symfony/framework-bundle": "<4.4",
-        "symfony/twig-bundle": "<4.4"
+    "autoload": {
+        "psr-4": {
+            "Ajgl\\Twig\\Extension\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ajgl\\Twig\\Extension\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.4.x-dev"
+        }
     },
     "scripts": {
         "fix-cs": [
@@ -52,13 +68,5 @@
         "test": [
             "@php vendor/bin/phpunit --colors=always"
         ]
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.4.x-dev"
-        }
     }
 }
