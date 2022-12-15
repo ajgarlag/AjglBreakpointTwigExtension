@@ -68,13 +68,12 @@ Any argument passed to the twig function will be added to the `$arguments` array
 Symfony Bundle
 --------------
 
-If you want to use this extension in your Symfony application, you can enable the
-Symfony Bundle included in this package.
+The package includes a Symfony Bundle to automatically register the Twig extension.
 
-The bundle will register the twig extension automatically. So, once enabled, you
-can insert the `breakpoint` twig function in your templates.
+If the app uses Symfony Flex and you allow the recipe execution, the bundle will be enabled
+automatically.
 
-### Symfony 4/5/6
+If you need to configure it manually, add the following line to the `config/bundles.php` file:
 
 ```php
 // config/bundles.php
