@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Support PHP 8.3
+- Support Symfony 7
 
 ## [0.4.0] - 2022-12-06
 
