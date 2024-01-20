@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+## [0.4.1] - 2024-01-20
+
 ### Added
 - Support PHP 8.3
 
@@ -77,7 +79,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `breakpoint` function
 
 
-[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.0...master
+[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.1...master
+[0.4.1]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.0...0.4.1
 [0.4.0]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.3.5...0.4.0
 [0.3.4]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.3.4...0.3.5
 [0.3.4]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.3.3...0.3.4
