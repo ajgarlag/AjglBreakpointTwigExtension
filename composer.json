@@ -19,8 +19,9 @@
     "homepage": "https://github.com/ajgarlag/AjglBreakpointTwigExtension",
     "require": {
         "php": ">=7.4",
-        "twig/twig": "^2.15.3 || ^3.0"
+        "twig/twig": "^2.15.3 || ^3.0 || ^4.0"
     },
+    "minimum-stability": "dev",
     "require-dev": {
         "composer/xdebug-handler": "^2.0 || ^3.0",
         "friendsofphp/php-cs-fixer": "^3.13",
