@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+### Added
+- Add support for Symfony 7
+
 ## [0.4.1] - 2024-01-20
 
 ### Added
