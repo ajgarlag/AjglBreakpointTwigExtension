@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+### Fixed
+- Avoid extending a deprecated class
+
 ## [0.4.2] - 2024-01-22
 
 ### Added
