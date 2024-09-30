@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+## [0.4.3] - 2024-09-30
+
 ### Fixed
 - Avoid extending a deprecated class
 
@@ -88,7 +90,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `breakpoint` function
 
 
-[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.2...master
+[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.3...master
+[0.4.3]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.2...0.4.3
 [0.4.2]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.1...0.4.2
 [0.4.1]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.0...0.4.1
 [0.4.0]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.3.5...0.4.0
