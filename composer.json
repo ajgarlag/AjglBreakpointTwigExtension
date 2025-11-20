@@ -19,12 +19,12 @@
     "homepage": "https://github.com/ajgarlag/AjglBreakpointTwigExtension",
     "require": {
         "php": ">=8.2",
+        "php-cs-fixer/shim": "dev-master",
         "twig/twig": "^3.0 || ^4.0"
     },
     "minimum-stability": "dev",
     "require-dev": {
         "composer/xdebug-handler": "^3.0",
-        "friendsofphp/php-cs-fixer": "^3.13",
         "phpunit/phpunit": "^11.5 || ^12.5",
         "symfony/framework-bundle": "^5.4 || ^6.4 || ^7.3",
         "symfony/twig-bundle": "^5.4 || ^6.4 || ^7.3"
