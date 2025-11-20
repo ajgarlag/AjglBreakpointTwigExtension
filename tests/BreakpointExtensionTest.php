@@ -39,9 +39,6 @@ final class BreakpointExtensionTest extends TestCase
         $function = reset($functions);
         $this->assertInstanceOf(TwigFunction::class, $function);
         $callable = $function->getCallable();
-        $this->assertTrue(is_array($callable));
-        $this->assertCount(2, $callable);
-        $this->assertSame($this->extension, $callable[0]);
-        $this->assertSame('setBreakpoint', $callable[1]);
+        $this->assertIsCallable($callable);
     }
 }

@@ -23,7 +23,7 @@ final class AjglBreakpointTwigExtensionExtension extends Extension
 {
     public function load(array $config, ContainerBuilder $container): void
     {
-        $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $loader->load('twig.xml');
+        $loader = new Loader\PhpFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader->load('twig.php');
     }
 }
