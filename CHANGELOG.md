@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+### Added
+- Add support for PHP 8.4, 8.5
+
 ### Changed
 - Migrate config format from XML to PHP
 
