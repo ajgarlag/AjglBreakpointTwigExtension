@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Add support for PHP 8.4, 8.5
+- Add support for Symfony 7.4 and 8.0
 
 ### Changed
 - Migrate config format from XML to PHP
