@@ -23,7 +23,7 @@
     },
     "minimum-stability": "dev",
     "require-dev": {
-        "composer/xdebug-handler": "^2.0 || ^3.0",
+        "composer/xdebug-handler": "^3.0",
         "friendsofphp/php-cs-fixer": "^3.13",
         "phpunit/phpunit": "^9.5.6",
         "symfony/framework-bundle": "^5.4 || ^6.4 || ^7.3",
@@ -31,7 +31,7 @@
         "symfony/twig-bundle": "^5.4 || ^6.4 || ^7.3"
     },
     "conflict": {
-        "composer/xdebug-handler": "<2.0",
+        "composer/xdebug-handler": "<3.0",
         "symfony/framework-bundle": "<5.4",
         "symfony/twig-bundle": "<5.4"
     },
