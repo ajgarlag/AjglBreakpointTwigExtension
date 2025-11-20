@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+### Changed
+- Migrate config format from XML to PHP
+
 ### Removed
 - Drop support for PHP < 8.2
 - Drop support for Twig < 3.0
