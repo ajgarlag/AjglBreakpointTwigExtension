@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 - Drop support for PHP < 8.2
 - Drop support for Twig < 3.0
+- Drop support for Symonfy 4.4, 6.3, 7.0, 7.1, and 7.2
 
 ## [0.4.3] - 2024-09-30
 
