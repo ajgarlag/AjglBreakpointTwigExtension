@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+## [0.4.4] - 2025-11-20
+
 ### Added
 - Add support for PHP 8.4, 8.5
 - Add support for Symfony 7.4 and 8.0
@@ -14,7 +16,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 - Drop support for PHP < 8.2
 - Drop support for Twig < 3.0
-- Drop support for Symonfy 4.4, 6.3, 7.0, 7.1, and 7.2
+- Drop support for Symfony 4.4, 6.3, 7.0, 7.1, and 7.2
 - Drop support for composer/xdebug-handler<3.0
 
 ## [0.4.3] - 2024-09-30
@@ -103,7 +105,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `breakpoint` function
 
 
-[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.3...master
+[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.4...master
+[0.4.4]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.3...0.4.4
 [0.4.3]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.2...0.4.3
 [0.4.2]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.1...0.4.2
 [0.4.1]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.0...0.4.1
