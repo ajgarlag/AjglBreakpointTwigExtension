@@ -1,49 +1,49 @@
-name: tests
+name: "tests"
 
 on:
-  push:
-  pull_request:
+    pull_request: ~
+    push: ~
+    schedule:
+        - cron: "17 10 12 * *"
 
 jobs:
-  tests:
-    runs-on: ubuntu-latest
-    continue-on-error: ${{ matrix.allow_failure }}
-    strategy:
-      fail-fast: false
-      matrix:
-        php: ['7.4', '8.0', '8.1', '8.2', '8.3']
-        stability: ['prefer-lowest', 'prefer-stable']
-        allow_failure: [false]
-        include:
-          - php: '8.3'
-            stability: 'dev'
-            allow_failure: true
+    tests:
+        runs-on: "ubuntu-latest"
+        continue-on-error: "${{ matrix.continue-on-error }}"
+        strategy:
+            fail-fast: false
+            matrix:
+                php: ["7.4", "8.0", "8.1", "8.2", "8.3"]
+                dependency-versions: ["highest"]
+                composer-stable: ["1"]
+                continue-on-error: [false]
+                include:
+                    - php: "7.4"
+                      dependency-versions: "lowest"
+                      composer-stable: "1"
+                      continue-on-error: false
+                    - php: "8.3"
+                      composer-flags: ''
+                      continue-on-error: true
 
-    name: ${{ matrix.php }}-${{ matrix.stability }}
+        name: "PHP ${{ matrix.php }} - Composer ${{ matrix.dependency-versions }}"
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+        steps:
+            - name: "checkout"
+              uses: "actions/checkout@v4"
 
-      - name: Cache dependencies
-        uses: actions/cache@v1
-        with:
-          path: ~/.composer/cache/files
-          key: dependencies-php-${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
+            - name: "setup php"
+              uses: "shivammathur/setup-php@v2"
+              with:
+                php-version: "${{ matrix.php }}"
+                tools: "composer"
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: ${{ matrix.php }}
-          coverage: none
+            - name: "install composer dependencies"
+              uses: "ramsey/composer-install@v3"
+              env:
+                COMPOSER_PREFER_STABLE: "${{ matrix.composer-stable }}"
+              with:
+                dependency-versions: "${{ matrix.dependency-versions }}"
 
-      - name: Install dependencies
-        run: composer update --${{ matrix.stability }} --prefer-dist --no-interaction --no-progress
-
-      - name: Check coding standard
-        run: composer lint
-        continue-on-error: true
-        if: ${{ matrix.php == '8.1' }}
-
-      - name: Execute tests
-        run: composer test || ${{ matrix.allow_failure }}
+            - name: "run unit tests"
+              run: "vendor/bin/simple-phpunit --colors=always"
