@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+## [0.4.5] - 2025-11-21
+
+### Fixed
+- Move php-cs-fixer requirement to dev
+
 ## [0.4.4] - 2025-11-20
 
 ### Added
@@ -105,7 +110,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `breakpoint` function
 
 
-[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.4...master
+[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.5...master
+[0.4.5]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.4...0.4.5
 [0.4.4]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.3...0.4.4
 [0.4.3]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.2...0.4.3
 [0.4.2]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.1...0.4.2
