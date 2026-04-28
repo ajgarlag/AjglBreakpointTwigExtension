@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+## [0.4.6] - 2026-04-28
+
 ### Removed
 - Drop support for Symfony 7.3
 
@@ -116,7 +118,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add `breakpoint` function
 
 
-[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.5...master
+[unreleased]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.6...master
+[0.4.6]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.5...0.4.6
 [0.4.5]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.4...0.4.5
 [0.4.4]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.3...0.4.4
 [0.4.3]: https://github.com/ajgarlag/AjglBreakpointTwigExtension/compare/0.4.2...0.4.3
