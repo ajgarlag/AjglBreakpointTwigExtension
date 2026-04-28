@@ -26,13 +26,8 @@
         "composer/xdebug-handler": "^3.0",
         "php-cs-fixer/shim": "^3.90",
         "phpunit/phpunit": "^11.5 || ^12.5",
-        "symfony/framework-bundle": "^5.4 || ^6.4 || ^7.3",
-        "symfony/twig-bundle": "^5.4 || ^6.4 || ^7.3"
-    },
-    "conflict": {
-        "composer/xdebug-handler": "<3.0",
-        "symfony/framework-bundle": "<5.4",
-        "symfony/twig-bundle": "<5.4"
+        "symfony/framework-bundle": "^5.4 || ^6.4 || ^7.3 || ^8.0",
+        "symfony/twig-bundle": "^5.4 || ^6.4 || ^7.3 || ^8.0"
     },
     "suggest": {
         "ext-xdebug": "The Xdebug extension is required for the breakpoint to work",

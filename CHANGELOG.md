@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+### Fixed
+- Fix `composer.json` requirements
+
 ## [0.4.5] - 2025-11-21
 
 ### Fixed
