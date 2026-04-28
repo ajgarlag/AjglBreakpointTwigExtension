@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+### Removed
+- Drop support for Symfony 7.3
+
 ### Fixed
 - Fix `composer.json` requirements
 

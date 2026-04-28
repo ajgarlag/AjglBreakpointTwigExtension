@@ -5,6 +5,7 @@ on:
     push: ~
     schedule:
         - cron: "17 10 12 * *"
+    workflow_dispatch: ~
 
 jobs:
     tests:
@@ -14,7 +15,7 @@ jobs:
             fail-fast: false
             matrix:
                 php: ["8.2", "8.3", "8.4", "8.5"]
-                symfony: ["5.4.*", "6.4.*", "7.3.*", "7.4.*", "8.0.*"]
+                symfony: ["5.4.*", "6.4.*", "7.4.*", "8.0.*"]
                 dependency-versions: ["highest"]
                 composer-stable: ["1"]
                 continue-on-error: [false]
